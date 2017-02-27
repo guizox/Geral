@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="full" lang="en" ng-app>
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Full - Start Bootstrap Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/full.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwH4x4vOi6dc9vj_a1dz_miJZCw59qS4k" ></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <style>
+      html, body {
+        height: 90%;
+        margin: 0;
+        padding: 0;
+      }
+        #map {
+            height: 100%;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" id="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Wis</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="navBar">
+                    <li>
+                        <span style="display: inline-block; margin-left: 20px;" class="fa fa-car"></span>
+                        <a onclick="markCarPlace();" style="display: inline-block;"> Mark your car place  </a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <span style="display: inline-block; margin-left: 20px;" class="glyphicon glyphicon-cog"></span>
+                        <a onclick="goToSettings();" style="display: inline-block;"> Settings  </a>
+                    </li>
+                    <li>
+                        <span style="display: inline-block; margin-left: 20px;" class="glyphicon glyphicon-arrow-left"></span>
+                        <a onclick="logout();" style="display: inline-block;"> Logout  </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="map"> </div>
+    <div style="overflow-y: auto; background-color: #080808; height:24%;" id="distancia">
+        <h3 style="font-color: #000000; text-align: center;">Your route</h3>
+    </div>
+</body>
+</html>

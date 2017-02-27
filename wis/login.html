@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/full.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script src="js/TweenLite.min.js"></script>
+        <script src="js/login.js"></script>
+    </head>
+    <body>
+        <form accept-charset="UTF-8" role="form" id="form" onsubmit="login(); return false" >
+            <div style="width: 90%; margin-left: 5%; margin-top: 5%">
+                <div class="panel-heading">
+                    <div class="panel-title text-center">
+                        <h1 style="text-align: center; color: 478FFC;" class="title">Login</h1>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-lg btn-info btn-block" id="btn-login" value="Login" />
+                <div>
+                    <a href="createAccount.html" style="font-size: 12px;">Need to create an account?</a>
+                    <div id="errorMessage" style="float: right;"></div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
